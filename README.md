@@ -24,7 +24,7 @@ GROUP BY st.store_id, s.staff_id, s.last_name, s.first_name, c.city
 HAVING COUNT(*) > 300;
 ```
 
-![Alt text](img/1.png)
+![Alt text](img/1.PNG)
 
 
 ### Задание 2
@@ -38,7 +38,7 @@ SELECT COUNT(*) AS films_longer_than_average
 FROM film
 WHERE length > (SELECT AVG(length) FROM film);
 ```
-![Alt text](img/2.png)
+![Alt text](img/2.PNG)
 
 ### Задание 3
 
@@ -61,7 +61,7 @@ FROM (
 WHERE rnk = 1;
 ```
 
-![Alt text](img/3.png)
+![Alt text](img/3.PNG)
 
 
 ### Задание 4*
@@ -80,7 +80,7 @@ JOIN payment p ON p.staff_id = s.staff_id
 GROUP BY s.staff_id, s.first_name, s.last_name;
 ```
 
-![Alt text](img/4.png)
+![Alt text](img/4.PNG)
 
 ### Задание 5*
 
@@ -99,6 +99,6 @@ WHERE NOT EXISTS (
 );
 ```
 
-![Alt text](img/5.png)
+![Alt text](img/5.PNG)
 
 ---
